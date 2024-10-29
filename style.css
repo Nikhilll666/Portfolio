@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    scrollbar-width: none;
+}
+#protfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+#left-container{
+    background-color: #262525;
+    width: 70%;    
+    height: 100vh;
+}
+#navlist{
+    width: 100vw;
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: #262525;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 5rem;
+}
+#navlist a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+#navlist a:hover{
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+}
+#left-content{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.icons{
+    width: 10%;
+    height: 50vh;
+    color: #bbb;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 20%;
+    padding-top: 120px;
+}
+.icons i:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff, #00BCEE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.left-right{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    padding-top: 10%;
+}
+.left-right h4{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 100px;
+}
+.left-right #name{
+    color: #00BCEE;
+}
+.left-right h1{
+    font-size: 8vh;
+    color: #00BCEE;
+    font-weight: 600;
+}
+.left-right p{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+}
+.left-right .button{
+    width: 35%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+.left-right .button button{
+    width: 150px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid #00BCEE;
+    background-color: #262525;
+    color: #00BCEE;
+    transition: .5s ease;  
+}
+.left-right #button_2{
+    width: 200px;
+}
+.button button:hover{
+    background-color: #00BCEE;
+    color: #000;
+
+}
+
+#design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+}
+
+.circle:nth-child(1){
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width: 38rem;
+}
+.circle:nth-child(2){
+    background-image: url(img/Nikhil_1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 30rem;
+    border: 1rem solid #fff;
+    box-shadow: 0 0 1rem #fff,
+    inset 0 0 1rem #fff,
+    0 0 2rem #0171E9,
+    inset 0 0 2rem #0171E9,
+    0 0 4rem #0171E9,
+    inset 0 0 4rem #0171E9;
+}
+
+
+#right-container{
+    background: linear-gradient(#262525 10%,#0171E9);
+    width: 30%;
+    height: 100vh;
+}
+
+.layout{
+    width: 100vw;
+    height: 100vh;
+}
+#page_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+    color: #fff;
+    background-color: #262525;
+}
+#page_2 p{
+    width: 80%;
+    font-size: 30px;
+    
+}
+#page_2 h1{
+    font-size: 6rem;
+    font-weight: 600;
+}
+#page_2 span{
+    color: #0171E9;
+    text-shadow: 0 0 1rem #0171E9;
+}
+.page2_icons{
+    width: 90vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+}
+.page2_icons i{
+    width:  12rem;
+    height: 12rem;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #0171E9;
+    border: 2px solid crimson;
+    box-shadow: 0 0 1.5rem #0171E9;
+}
+#page_3{
+    background-color: #262525;
+    padding-top: 100px;
+    height: 120vh;
+}
+#page_3 .row{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+}
+.row .box{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.box .imgsec{
+    width: 80%;
+    height: 70%;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem #0171E9;
+}
+#imgsec1{
+    background-image: url(img/project_1.png);
+    background-size: cover;
+}
+#imgsec2{
+    background-image: url(img/project_2.png);
+    background-size: cover;
+}
+#imgsec3{
+    background-image: url(img/project_3.png);
+    background-size: cover;
+}
+#imgsec4{
+    background-image: url(img/project_4.png);
+    background-size: cover;
+}
+.box .imgabout{
+    width: 90%;
+    height: 50%;  
+    /* border: 2px solid #00BCEE; */
+}
+.box .imgabout h1{
+    font-size: 35px;
+    font-weight: 500;
+    color: #0171E9;
+    padding-top: 20px;
+}
+.box .imgabout h5{
+    font-size: 20px;
+    font-weight: 500;
+    color: #0171E9;
+}
+.box .imgabout a{
+    text-decoration: none;
+    color: #fff;
+}
+.imgabout span{
+    text-shadow: 0 0 1.5rem #0171E9;
+}
+
+
+#page_4{
+    background-image: url(https://img.freepik.com/free-vector/creative-geometric-design-space_53876-89787.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: space-evenly;
+    align-items: end;
+    padding: 100px 120px;
+}
+#page_4 span{
+    display: flex;
+    justify-content: flex-end;
+}
+#page_4 h2{
+    font-size: 50px;
+    color: #0171E9;
+    text-shadow: 0 0 1.5rem #0171E9;
+}
+#page_4 p{
+    font-size: 30px;
+}
+
+.page4_icons{
+    width: 15rem;
+    height: 4rem;
+    /* background-color: crimson;    */
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+    text-shadow: 0 0 1.5rem #0171E9;
+    justify-content: space-between; 
+}
+#page_4 h3{
+    font-size: 40px;
+    font-weight: 400;
+    color: #0171E9;
+    font-family: "Ribeye Marrow", serif;
+    text-shadow: 0 0 1.5rem #0171E9;
+    display: flex;
+}
+#page_4 h3 span{
+    padding-right: 20px;
+    width: 50px;
+}
+
+.page4_icons i:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff, #0171E9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen{
+    
+}
+
